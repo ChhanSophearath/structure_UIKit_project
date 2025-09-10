@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '13.0'
+
+target 'StructureUIKitProject' do
+  use_frameworks!
+
+  # Firebase dependencies
+  pod 'Firebase/Analytics', '~> 10.16'
+  pod 'Firebase/Auth', '~> 10.16'
+  pod 'Firebase/Firestore', '~> 10.16'
+  pod 'Firebase/Messaging', '~> 10.16'
+  pod 'Firebase/Crashlytics', '~> 10.16'
+
+  # UI & Utilities
+  pod 'SnapKit', '~> 5.6'   # correct version
+  pod 'IQKeyboardManagerSwift'
+
+  # Realm for local database
+  pod 'RealmSwift', '~> 10.50'
+
+  # Google Maps SDK
+  pod 'GoogleMaps'
+
+  # Optional
+  # pod 'GoogleSignIn'
+  # pod 'MarqueeLabel'
+end
+

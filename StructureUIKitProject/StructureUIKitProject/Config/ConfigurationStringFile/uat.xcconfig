@@ -1,0 +1,28 @@
+//
+//  uat.xcconfig
+//  CoreStructure_iOS
+//
+//  Created by Rath! on 12/9/24.
+//
+
+//Referent ==> https://medium.com/@tejaswini-27k/ios-project-different-environments-xcode-configurations-and-scheme-752ee4404bfa
+
+// MARK: All key, We need add in info(example: BASE_URL : $(BASE_URL) )
+
+//uat-api-prime.therealreward.com/
+// terminal: ipconfig getifaddr en0 = 192.168.0.175 // Django 0.0.0.0:8000 nad ALLOWED_HOSTS = ['*']
+BASE_URL = https:/$()/jsonplaceholder.typicode.com/
+
+API_KEY = AIzaSyDSXrwu6JBuY6VfJfjCcXDdOp2PqIwbGbk // get from firebase key API_KEY
+
+BUNDLE_ID = com.rath.CoreStructure-iOS.dev//com.bvmpetroleum.anupheap.uat//com.rath.CoreStructure-iOS.dev
+//com.rath.CoreStructure-iOS.uat
+
+Bundle_Display_Name = UAT Testing
+
+
+/// MARK: - ASUtils are key and vector
+
+ PAYMENT_KEY = PAYMENT_KEY_UAT
+
+PAYMENT_VECTOR = PAYMENT_VECTOR_UAT
