@@ -1,6 +1,6 @@
 //
 //  CheckmarkView.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 14/8/24.
 //

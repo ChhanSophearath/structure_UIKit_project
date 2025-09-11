@@ -1,6 +1,6 @@
 //
 //  AddProductViewController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 4/4/25.
 //

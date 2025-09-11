@@ -1,6 +1,6 @@
 //
 //  PagViewControllerWithButtonVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 6/11/24.
 //

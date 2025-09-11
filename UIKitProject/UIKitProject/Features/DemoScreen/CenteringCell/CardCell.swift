@@ -1,6 +1,6 @@
 //
 //  CardCell.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 10/10/24.
 //

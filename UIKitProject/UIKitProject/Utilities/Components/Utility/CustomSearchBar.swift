@@ -1,6 +1,6 @@
 //
 //  CustomSearchBar.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 13/2/25.
 //

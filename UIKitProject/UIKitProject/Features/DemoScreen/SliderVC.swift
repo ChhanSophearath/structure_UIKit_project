@@ -1,6 +1,6 @@
 //
 //  SliderController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 8/11/24.
 //

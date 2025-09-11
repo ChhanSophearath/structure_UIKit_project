@@ -1,6 +1,6 @@
 //
 //  DisplayWebController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 24/12/24.
 //

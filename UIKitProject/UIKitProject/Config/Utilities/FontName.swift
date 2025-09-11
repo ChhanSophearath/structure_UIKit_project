@@ -1,6 +1,6 @@
 //
 //  FontName.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 24/6/25.
 //

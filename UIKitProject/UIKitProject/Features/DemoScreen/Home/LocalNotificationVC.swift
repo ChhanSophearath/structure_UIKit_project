@@ -1,6 +1,6 @@
 //
 //  LocalNotificationVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 4/11/24.
 //

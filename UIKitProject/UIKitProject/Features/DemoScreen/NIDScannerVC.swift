@@ -1,6 +1,6 @@
 //
 //  NIDScannerVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 1/4/25.
 //

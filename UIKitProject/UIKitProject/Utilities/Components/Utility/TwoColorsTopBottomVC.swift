@@ -1,6 +1,6 @@
 //
 //  DynamicHeightVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 3/6/25.
 //

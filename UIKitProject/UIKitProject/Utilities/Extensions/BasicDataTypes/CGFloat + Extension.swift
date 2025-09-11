@@ -1,6 +1,6 @@
 //
 //  CGFloat + Extension.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 10/2/25.
 //

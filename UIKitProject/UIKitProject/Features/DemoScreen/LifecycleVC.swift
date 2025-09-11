@@ -1,6 +1,6 @@
 //
 //  LifecycleVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 9/7/25.
 //

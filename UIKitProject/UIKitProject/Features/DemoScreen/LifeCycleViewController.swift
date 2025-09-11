@@ -1,6 +1,6 @@
 //
 //  LifeCycaleViewController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 18/7/25.
 //

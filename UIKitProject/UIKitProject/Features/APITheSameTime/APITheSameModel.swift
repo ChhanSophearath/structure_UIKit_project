@@ -1,6 +1,6 @@
 //
 //  APITheSameModel.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 21/7/25.
 //

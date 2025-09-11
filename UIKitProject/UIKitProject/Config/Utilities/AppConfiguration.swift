@@ -1,6 +1,6 @@
 //
 //  AppConfiguration.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 6/11/24.
 //
@@ -19,18 +19,18 @@ final class AppConfiguration {
     private enum InfoPlistKey: String {
         case version = "CFBundleShortVersionString"
         case build = "CFBundleVersion"
-        case bundleID = "BUNDLE_ID"
-        case apiKey = "API_KEY"
-        case baseURL = "BASE_URL"
-        case paymentKey = "PAYMENT_KEY"
-        case paymentVector = "PAYMENT_VECTOR"
+//        case bundleID = "BUNDLE_ID"
+        case apiKey = "api_key"
+        case baseURL = "base_url"
+//        case paymentKey = "PAYMENT_KEY"
+//        case paymentVector = "PAYMENT_VECTOR"
     }
 
     // MARK: - App Info
 
     let versionApp: String = AppConfiguration.getValue(for: .version)
     let versionBuildApp: String = AppConfiguration.getValue(for: .build)
-    let bundleID: String = AppConfiguration.getValue(for: .bundleID)
+//    let bundleID: String = AppConfiguration.getValue(for: .bundleID)
 
     // MARK: - API Configuration
 
@@ -39,8 +39,8 @@ final class AppConfiguration {
 
     // MARK: - Encryption Keys (AES-256, IV)
 
-    let paymentKey: String = AppConfiguration.getValue(for: .paymentKey)
-    let paymentVector: String = AppConfiguration.getValue(for: .paymentVector)
+    let paymentKey: String = "" //AppConfiguration.getValue(for: .paymentKey)
+    let paymentVector: String = "" // AppConfiguration.getValue(for: .paymentVector)
 
     // MARK: - Private Helper
 

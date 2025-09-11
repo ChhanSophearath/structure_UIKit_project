@@ -1,6 +1,6 @@
 //
 //  APITheSameTimeViewModel.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 19/7/25.
 //
@@ -98,30 +98,161 @@ class SingleCallApiViewModel {
 
 struct PostModel: Codable {
     let userId: Int
-    let id: Int
+    let id: String
     let title: String
     let body: String
 }
 
 
 
+//@MainActor
+//class ViewModel: ObservableObject {
+//    var posts: [PostModel]?
+//    var comments: [PostModel]? // example second API
+//    var onDataUpdated: (() -> Void)?
+//    
+//    func asyncCall() {
+//        Task {
+//            do {
+//                // Start multiple requests concurrently
+//                async let postsRequest: [PostModel] = ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+//                async let commentsRequest: [PostModel] = ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+//                
+//                // Await results together
+//                let (postsResult, commentsResult) = try await (postsRequest, commentsRequest)
+//                
+//                // Assign results
+//                self.posts = postsResult
+//                self.comments = commentsResult
+//                
+//                // Notify UI
+//                onDataUpdated?()
+//                
+//            } catch {
+//                print("Error fetching data: ", error.localizedDescription)
+//            }
+//        }
+//    }
+//    
+//    func syncCall(){
+//        Task {
+//            do {
+//                // First request
+//                let postsResult: [PostModel]? = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+//                
+//                
+//                // Second request (starts after first finishes)
+//                let commentsResult: [PostModel]? = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+//                
+//                self.posts = postsResult
+//                self.comments = commentsResult
+//                
+//                // is called once after both finish.
+//                onDataUpdated?()
+//                
+//            } catch {
+//                print("Error fetching data: ", error.localizedDescription)
+//            }
+//        }
+//        
+//    }
+//    
+//    
+//    func fetchWithTaskGroup() {
+//        
+//        
+//        Task {
+//            do {
+//                // Create a task group
+//                try await withThrowingTaskGroup(of: (String, [PostModel]).self) { group in
+//                    
+//                    // Add first API request
+//                    group.addTask {
+//                        let posts: [PostModel] = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+//                        return ("posts", posts)
+//                    }
+//                    
+//                    // Add second API request
+//                    group.addTask {
+//                        let comments: [PostModel] = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+//                        return ("comments", comments)
+//                    }
+//                    
+//                    // Collect results
+//                    var tempPosts: [PostModel]?
+//                    var tempComments: [PostModel]?
+//                    
+//                    for try await (key, result) in group {
+//                        if key == "posts" {
+//                            tempPosts = result
+//                            print("===> tempPosts")
+//                        }
+//                        if key == "comments" {
+//                            tempComments = result
+//                            print("===> tempComments")
+//                        }
+//                    }
+//                    
+//                    // Assign to properties
+//                    self.posts = tempPosts
+//                    self.comments = tempComments
+//                    
+//                    // Notify UI
+//                    onDataUpdated?()
+//                }
+//            } catch {
+//                print("Error fetching data with TaskGroup: ", error.localizedDescription)
+//            }
+//        }
+//    }
+//    
+//}
+
 @MainActor
 class ViewModel: ObservableObject {
-    var posts: [PostModel]?
-    var comments: [PostModel]? // example second API
-    var onDataUpdated: (() -> Void)?
     
+    // MARK: - Published properties
+    var posts: [PostModel]?
+    var comments: [PostModel]? // Example: second API
+    var onDataUpdated: (() -> Void)? // Closure to notify UI when data updates
+    
+    // MARK: - Concurrent requests using async let
     func asyncCall() {
         Task {
             do {
-                // Start multiple requests concurrently
+                // Start multiple requests concurrently.
+                // Both requests start immediately and run in parallel.
                 async let postsRequest: [PostModel] = ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
                 async let commentsRequest: [PostModel] = ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
                 
-                // Await results together
+                // Await both results together
                 let (postsResult, commentsResult) = try await (postsRequest, commentsRequest)
                 
-                // Assign results
+                // Assign results to properties
+                self.posts = postsResult
+                self.comments = commentsResult
+                
+                // Notify the UI after both are done
+                onDataUpdated?()
+                
+            } catch {
+                // Handle errors from either request
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    // MARK: - Sequential requests (one after another)
+    func syncCall() {
+        Task {
+            do {
+                // First request (posts)
+                let postsResult: [PostModel]? = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+                
+                // Second request (comments) starts after the first finishes
+                let commentsResult: [PostModel]? = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
+                
+                // Assign to properties
                 self.posts = postsResult
                 self.comments = commentsResult
                 
@@ -129,41 +260,16 @@ class ViewModel: ObservableObject {
                 onDataUpdated?()
                 
             } catch {
-                print("Error fetching data: ", error.localizedDescription)
+                // Handle errors individually
+                print(error.localizedDescription)
             }
         }
     }
     
-    func syncCall(){
-        Task {
-            do {
-                // First request
-                let postsResult: [PostModel]? = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
-                
-                
-                // Second request (starts after first finishes)
-                let commentsResult: [PostModel]? = try await ApiManagerAsyncAwait.shared.request(endpoint: .apiFreePosts)
-                
-                self.posts = postsResult
-                self.comments = commentsResult
-                
-                // is called once after both finish.
-                onDataUpdated?()
-                
-            } catch {
-                print("Error fetching data: ", error.localizedDescription)
-            }
-        }
-        
-    }
-    
-    
+    // MARK: - Fetch with TaskGroup (concurrent + flexible handling)
     func fetchWithTaskGroup() {
-        
-        
         Task {
             do {
-                // Create a task group
                 try await withThrowingTaskGroup(of: (String, [PostModel]).self) { group in
                     
                     // Add first API request
@@ -178,32 +284,35 @@ class ViewModel: ObservableObject {
                         return ("comments", comments)
                     }
                     
-                    // Collect results
+                    // Temporary storage for results
                     var tempPosts: [PostModel]?
                     var tempComments: [PostModel]?
                     
+                    // Collect results as they finish
                     for try await (key, result) in group {
-                        if key == "posts" {
+                        switch key {
+                        case "posts":
                             tempPosts = result
-                            print("===> tempPosts")
-                        }
-                        if key == "comments" {
+                            print("===> tempPosts received")
+                        case "comments":
                             tempComments = result
-                            print("===> tempComments")
+                            print("===> tempComments received")
+                        default:
+                            break
                         }
                     }
                     
-                    // Assign to properties
+                    // Assign final results
                     self.posts = tempPosts
                     self.comments = tempComments
                     
-                    // Notify UI
+                    // Notify UI after all tasks complete
                     onDataUpdated?()
                 }
             } catch {
-                print("Error fetching data with TaskGroup: ", error.localizedDescription)
+                // Handle errors from any task in the group
+                print(error.localizedDescription)
             }
         }
     }
-    
 }

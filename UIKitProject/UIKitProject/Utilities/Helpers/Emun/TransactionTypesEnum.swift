@@ -1,6 +1,6 @@
 //
 //  TransactionTypesEnum.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 19/12/24.
 //

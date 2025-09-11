@@ -1,6 +1,6 @@
 //
 //  ApiManager.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 12/8/24.
 //
@@ -366,7 +366,7 @@ class ApiManagerAsyncAwait {
         let (data, response) = try await session.data(for: request)
         
         // Log response for debugging
-        await logResponse(request: request, data: data)
+        await logResponse(request: request, data: data, modelName: String(describing: T.self))
         
         
         guard let httpResponse = response as? HTTPURLResponse else {
@@ -376,9 +376,24 @@ class ApiManagerAsyncAwait {
         switch httpResponse.statusCode {
         case 200..<300:
             
-            print("Decoding model:", String(describing: T.self))
-
-            return try decoder.decode(T.self, from: data)
+            
+            // MARK: handle validator model match or not
+            do {
+                
+                let decodedModel = try decoder.decode(T.self, from: data)
+                return decodedModel
+                
+            } catch let decodingError as DecodingError {
+                
+                print("❌ DecodingError occurred: \(decodingError)\n\n")
+                await Loading.shared.hideLoading()
+                throw NetworkError.decodingError(decodingError)
+                
+            } catch {
+                
+                await Loading.shared.hideLoading()
+                throw NetworkError.decodingError(error)
+            }
             
         case 401:
             return try await handleUnauthorizedResponse(request: request)
@@ -504,8 +519,8 @@ class ApiManagerAsyncAwait {
         return isReachable && !needsConnection
     }
     
-    private func logResponse(request: URLRequest, data: Data) async {
-
+    private func logResponse(request: URLRequest, data: Data, modelName: String) async {
+        
         let urlString = request.url?.absoluteString ?? "Unknown URL"
         let headers = request.allHTTPHeaderFields ?? [:]
         let body = request.httpBody.flatMap { String(data: $0, encoding: .utf8) } ?? "None"
@@ -513,18 +528,16 @@ class ApiManagerAsyncAwait {
         
         let logMessage = """
         \n\n
-        ✅------------------- API Request -------------------
+        ✅---> API Request -------------------
         URL: \(urlString)
         Headers: \(headers)
         Body: \(body)
-        ✅------------------- Response ----------------------
+        ✅---> Response --> Prepare model codable: \(modelName)
         \(responseString)
-        \n
-        -----------------------------------------------------
         """
         
         print(logMessage)
-
+        
     }
 }
 

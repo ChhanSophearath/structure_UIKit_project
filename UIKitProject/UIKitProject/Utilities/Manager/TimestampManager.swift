@@ -1,6 +1,6 @@
 //
 //  TimeAgoFormatter.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 12/8/24.
 //

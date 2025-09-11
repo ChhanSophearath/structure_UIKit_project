@@ -1,6 +1,6 @@
 //
 //  AlertMessageVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 10/9/24.
 //

@@ -1,6 +1,6 @@
 //
 //  HomeVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 19/9/24.
 //

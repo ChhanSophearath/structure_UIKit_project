@@ -1,6 +1,6 @@
 //
 //  LocalizableContoller.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 7/11/24.
 //

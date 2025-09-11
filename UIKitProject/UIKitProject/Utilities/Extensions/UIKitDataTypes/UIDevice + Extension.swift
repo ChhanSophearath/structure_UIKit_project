@@ -1,6 +1,6 @@
 //
 //  UIDevice.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 28/8/24.
 //

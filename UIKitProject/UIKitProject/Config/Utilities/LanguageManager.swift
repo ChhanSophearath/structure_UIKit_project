@@ -1,6 +1,6 @@
 //
 //  LanguageManager.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 17/6/25.
 //
@@ -21,7 +21,6 @@ class LanguageManager {
     private let languageKey = "languageKey"
 
     func setCurrentLanguage(_ lang: LanguageTypeEnum) {
-//        print("🌐 Setting language to: \(lang.rawValue)")
         UserDefaults.standard.setValue(lang.rawValue, forKey: languageKey)
     }
     

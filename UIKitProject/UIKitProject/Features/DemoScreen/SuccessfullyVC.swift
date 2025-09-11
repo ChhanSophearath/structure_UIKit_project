@@ -1,6 +1,6 @@
 //
 //  SuccessfullyViewController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 3/7/25.
 //

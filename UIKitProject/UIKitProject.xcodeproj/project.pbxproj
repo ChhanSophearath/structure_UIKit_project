@@ -497,10 +497,10 @@
 			children = (
 				FAB9D7702E726BF90024704B /* Encryption */,
 				FAB9D7742E726BF90024704B /* FontName.swift */,
-				FAB9D7752E726BF90024704B /* LanguageManager.swift */,
-				FAB9D7762E726BF90024704B /* AppConfiguration.swift */,
-				FAB9D7772E726BF90024704B /* NotificationManager.swift */,
 				FAB9D7782E726BF90024704B /* AccountManager.swift */,
+				FAB9D7752E726BF90024704B /* LanguageManager.swift */,
+				FAB9D7772E726BF90024704B /* NotificationManager.swift */,
+				FAB9D7762E726BF90024704B /* AppConfiguration.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";

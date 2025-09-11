@@ -1,6 +1,6 @@
 //
 //  MemorleaksVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 22/7/25.
 //

@@ -1,6 +1,6 @@
 //
 //  OTPViewController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 14/9/24.
 //

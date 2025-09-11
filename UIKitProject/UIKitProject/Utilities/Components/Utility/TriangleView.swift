@@ -1,6 +1,6 @@
 //
 //  TriangleView.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 29/11/24.
 //

@@ -1,6 +1,6 @@
 //
 //  GroupDateVC.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 28/10/24.
 //

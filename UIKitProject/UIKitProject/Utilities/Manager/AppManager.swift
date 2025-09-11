@@ -1,6 +1,6 @@
 //
 //  AppManager.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 31/7/25.
 //

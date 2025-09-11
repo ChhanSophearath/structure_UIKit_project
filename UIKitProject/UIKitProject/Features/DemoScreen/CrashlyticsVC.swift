@@ -1,6 +1,6 @@
 //
 //  CrashlyticsViewController.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 25/6/25.
 //

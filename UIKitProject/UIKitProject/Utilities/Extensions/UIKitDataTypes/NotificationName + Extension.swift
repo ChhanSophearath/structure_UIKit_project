@@ -1,6 +1,6 @@
 //
 //  Notification + Extension.swift
-//  CoreStructure_iOS
+//  UIKitProject
 //
 //  Created by Rath! on 9/11/24.
 //
