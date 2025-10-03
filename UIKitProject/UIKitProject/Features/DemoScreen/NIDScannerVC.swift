@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class NIDScannerVC: UIViewController, UIGestureRecognizerDelegate  {
+class NIDScannerVC: BaseUIViewConroller  {
     
     // Manages the entire camera session (starting/stopping capture)
     private var captureSession: AVCaptureSession!

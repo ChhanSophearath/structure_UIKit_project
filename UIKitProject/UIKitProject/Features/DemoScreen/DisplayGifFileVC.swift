@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DisplayGifFileVC: UIViewController {
+class DisplayGifFileVC: BaseUIViewConroller {
     
     var imgGit = UIImageView()
     

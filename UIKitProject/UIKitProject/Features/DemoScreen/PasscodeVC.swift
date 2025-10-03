@@ -40,11 +40,6 @@ class PasscodeVC: BaseUIViewConroller {
         setupUIView()
     }
     
-}
-
-//MARK: Handle CompleteDigit passcode
-extension  PasscodeVC {
-    
     private func completeDigit(passcod: String){
         
         if passcod == "999999"{
@@ -67,13 +62,13 @@ extension  PasscodeVC {
         }
     }
     
-    
     private func susseccfullyPasscode(){
         self.pushVC(to: SuccessfullyVC())
         
     }
-
+    
 }
+
 
 // MARK: - Handle biometricAuthentication
 extension PasscodeVC{
@@ -99,7 +94,6 @@ extension PasscodeVC{
             }
         }
     }
-    
     
     private func showAlert(message: String) {
         let alert = UIAlertController(title: "Authentication Status", message: message, preferredStyle: .alert)

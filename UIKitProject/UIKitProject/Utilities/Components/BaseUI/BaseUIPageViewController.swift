@@ -91,7 +91,7 @@ class BaseUIPageViewController: UIPageViewController, UIPageViewControllerDataSo
 }
 
 
-class PageVC: BaseInteractionViewController {
+class PageVC: BaseUIViewConroller {
     
     let pageVC = BaseUIPageViewController()
     

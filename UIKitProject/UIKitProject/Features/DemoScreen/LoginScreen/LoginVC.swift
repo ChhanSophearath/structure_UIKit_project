@@ -84,7 +84,11 @@ class LoginVC: UIViewController {
         viewModel.onSuccessLogin = { [weak self] in
             DispatchQueue.main.async {
                 self?.loginButton.stopLoading()
-                SceneDelegate.shared.changeRootViewController(to: CustomTabBarVC())
+                
+                if let sceneDelegate = UIApplication.shared.connectedScenes
+                        .first?.delegate as? SceneDelegate {
+                    sceneDelegate.changeRootViewController(to: CustomTabBarVC())
+                }
             }
         }
     }

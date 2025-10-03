@@ -52,13 +52,5 @@ class SSPaddingLabel: UILabel {
     }
 }
 
-//private let label: SSPaddingLabel = {
-//    let label = SSPaddingLabel()
-//    label.font = UIFont.appFont(style: .bold, size: 14)
-//    label.textColor = .black
-//    label.backgroundColor = .white
-//    label.text = "Title"
-//    label.padding = UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 4)
-//    label.translatesAutoresizingMaskIntoConstraints = false
-//    return label
-//}()
+
+

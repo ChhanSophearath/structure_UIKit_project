@@ -17,7 +17,7 @@ enum UploadImageEnum{
 
 class BaseUIImagePickerController: NSObject,
                                    UIImagePickerControllerDelegate,
-                                    UINavigationControllerDelegate {
+                                   UINavigationControllerDelegate {
     
     private var pickerController: UIImagePickerController!
     

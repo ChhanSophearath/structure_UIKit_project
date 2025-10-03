@@ -23,3 +23,10 @@ extension UserDefaults{
 }
 
 
+//
+//if let savedUser = UserDefaults.standard.getObject(User.self, with: "currentUser") {
+//    print(savedUser.name) // Output: Sophearath
+//    print(savedUser.email) // Output: sophearath@example.com
+//} else {
+//    print("No user found")
+//}

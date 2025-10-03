@@ -24,6 +24,12 @@ class DemoFeatureVC: BaseUIViewConroller {
     var totalList: Int = 0
 
     var items : [ListModel] =  [
+        
+        
+//        ListModel(id: 30, name: "TableHandlerVC", createViewController: { FruitCollectionVC() }),
+        ListModel(id: 29, name: "KeychainViewController", createViewController: { KeychainViewController() }),
+        ListModel(id: 28, name: "DisplayWebController", createViewController: { DisplayWebController() }),
+        ListModel(id: 27, name: "Rang day selection", createViewController: { CustomDatePickerViewController() }),
         ListModel(id: 26, name: "APITheSameTimeVC", createViewController: { APITheSameTimeVC() }),
         ListModel(id: 25, name: "PageVC", createViewController: { PageVC() }),
         ListModel(id: 24, name: "UploadImageVC", createViewController: { UploadImageVC() }),

@@ -7,11 +7,11 @@
 
 import UIKit
 
-class KeychainViewController: UIViewController {
+class KeychainViewController: BaseUIViewConroller {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        title = "Keychain"
         setupButtons()
     }
     

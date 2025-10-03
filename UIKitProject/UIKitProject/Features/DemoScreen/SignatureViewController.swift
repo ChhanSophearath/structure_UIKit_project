@@ -7,7 +7,9 @@
 
 import UIKit
 
-class SignatureViewController: UIViewController {
+class SignatureViewController: BaseUIViewConroller {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

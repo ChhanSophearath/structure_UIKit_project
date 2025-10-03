@@ -30,9 +30,18 @@ class SuccessfullyVC: BaseUIViewConroller {
     override func viewDidLoad() {
         super.viewDidLoad()
         leftBarButtonItem(icon: nil, isSwiping: false)
-        view.backgroundColor = .red
         title = "Susseccfully"
         setupConstraint()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
     }
     
     private func setupConstraint() {

@@ -7,18 +7,6 @@
 
 import UIKit
 
-
-//MARK: - Noted
-
-//button.actionUIButton = { [weak self] in
-//    self?.doSomething()
-//}
-
-//button.actionUIButton = {
-//    self.doSomething()  // 'self' is the view controller strongly captured here
-//}
-
-//@MainActor
 class BaseUIButton: UIButton {
     
     private var activityIndicator: UIActivityIndicatorView!
@@ -45,7 +33,6 @@ class BaseUIButton: UIButton {
             nsContraint.isActive = false
             nsContraint.constant = buttonHeight
             nsContraint.isActive = true
-//            self.if
         }
     }
     

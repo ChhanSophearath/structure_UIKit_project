@@ -11,7 +11,7 @@ import UIKit
 class BaseUITextFieldPhone: UITextField, UITextFieldDelegate {
     
     var textDidChange: ((_ : String) -> ())?
-    var isComplete: ((_ : Bool) -> ())?
+    
     private var strPrefix: String = ""
     
     override init(frame: CGRect) {
@@ -32,7 +32,7 @@ class BaseUITextFieldPhone: UITextField, UITextFieldDelegate {
         self.keyboardType = .numberPad
         self.tintColor = .orange
         self.delegate = self  // Ensure delegate is set to self
-        self.isPadding(left: 15, right: 15)
+        self.padding(left: 15, right: 15)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -73,12 +73,8 @@ class BaseUITextFieldPhone: UITextField, UITextFieldDelegate {
             textField.text = formatter(mask: "XX XXX XXX", phoneNumber: cleanString)
         } else {
             // Apply format for other prefixes
-            textField.text = formatter(mask: "XX XXX XXX X", phoneNumber: cleanString)
+            textField.text = formatter(mask: "XX XXX XXXX", phoneNumber: cleanString)
         }
-        
-        // Check if the phone number is complete (11 or 12 characters)
-        let isComplete = textField.text?.count == 11 || textField.text?.count == 12
-        self.isComplete?(isComplete)
         
         return false  // Prevent default text change
     }
@@ -105,92 +101,39 @@ class BaseUITextFieldPhone: UITextField, UITextFieldDelegate {
 
 
 
-class PhoneTextFieldVC: BaseUIViewConroller {
+
+
+
+extension UITextField {
     
-    private  var nsButton = NSLayoutConstraint()
-    
-    
-    lazy var phoneTextField: BaseUITextFieldPhone = {
-        let textField = BaseUITextFieldPhone()
-        textField.placeholder = "Enter phone number"
-        textField.borderStyle = .roundedRect
-        textField.keyboardType = .numberPad
-        textField.translatesAutoresizingMaskIntoConstraints = false
+    /// Apply a mask formatter to the textfield's current text
+    /// - Parameters:
+    ///   - mask: The format mask (use "X" as placeholder for digits)
+    ///   - replacement: Optional string to format (default: current text in textfield)
+    func applyFormat(mask: String, replacement: String? = nil) {
+        let input = replacement ?? self.text ?? ""
         
-        return textField
-    }()
-    
-    
-    lazy var btnButton: BaseUIButton = {
-        let button = BaseUIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Done", for: .normal)
-        button.addTarget(self, action: #selector(didTappedDone), for: .touchUpInside)
-        return button
-    }()
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.dismissKeyboard()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .white
-        title = "Phone TextField"
-        //        leftBarButtonItem(named: .back)
-        setupPhoneNumberTextField()
-        keyboradHandleer()
+        // Remove all non-numeric characters
+        let number = input.replacingOccurrences(
+            of: "[^0-9]",
+            with: "",
+            options: .regularExpression
+        )
         
+        var result = ""
+        var index = number.startIndex
         
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        phoneTextField.becomeFirstResponder()
-    }
-    
-    
-    @objc private func didTappedDone(){
-        print("didTappedDone")
-    }
-    
-    private func keyboradHandleer(){
-        
-        keyboardManager.onKeyboardWillShow = { [weak self] keyboardHeight in
-            guard let self = self else { return }
-            self.nsButton.constant = keyboardHeight - 20
-            UIView.animate(withDuration: 0.3) {
-                self.view.layoutIfNeeded()
+        // Loop through mask
+        for char in mask where index < number.endIndex {
+            if char == "X" {
+                result.append(number[index])
+                index = number.index(after: index)
+            } else {
+                result.append(char)
             }
         }
         
-        keyboardManager.onKeyboardWillHide = { [weak self] in
-            guard let self = self else { return }
-            self.nsButton.constant = .mainSpacingBottomButton
-            UIView.animate(withDuration: 0.3) {
-                self.view.layoutIfNeeded()
-            }
-        }
-    }
-    
-    private func setupPhoneNumberTextField() {
-        // Create a UITextField programmatically
-        view.addSubview(btnButton)
-        view.addSubview(phoneTextField)
-        
-        // Set constraints for the phone number text field
-        NSLayoutConstraint.activate([
-            phoneTextField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            phoneTextField.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100),
-            phoneTextField.widthAnchor.constraint(equalToConstant: 250),
-            phoneTextField.heightAnchor.constraint(equalToConstant: 50),
-            
-            btnButton.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
-            btnButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            
-        ])
-        
-        nsButton = btnButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: .mainSpacingBottomButton)
-        nsButton.isActive = true
+        self.text = result
     }
 }
+

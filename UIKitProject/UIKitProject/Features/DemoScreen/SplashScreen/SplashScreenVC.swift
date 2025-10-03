@@ -66,7 +66,7 @@ class SplashScreenVC: UIViewController {
     
     @objc private func didTappedButton(sender: UIButton) {
         let tabBar = CustomTabBarVC()
-        self.pushVC(to: tabBar)
+        SceneDelegate.sharedInstance?.changeRootViewController(to: tabBar)
     }
 }
 
@@ -87,7 +87,9 @@ class SplashScreenVC: UIViewController {
         tabBar.title =  contoller.title ?? "nil"
 
         if isChangRoot{
-            SceneDelegate.shared.changeRootViewController(to: tabBar)
+            
+            SceneDelegate.sharedInstance?.changeRootViewController(to: tabBar)
+            
         }else{
             // Use like this it is working from click alert from push notification from app DidDisconnect
             contoller.navigationController?.pushViewController(tabBar, animated: false)
@@ -112,7 +114,11 @@ class RooViewController{
             let tabBar = CustomTabBarVC()
             tabBar.posts = viewModel.posts ?? []
             tabBar.title =  contoller.title ?? "nil"
-            SceneDelegate.shared.changeRootViewController(to: tabBar)
+
+            if let sceneDelegate = UIApplication.shared.connectedScenes
+                    .first?.delegate as? SceneDelegate {
+                sceneDelegate.changeRootViewController(to: tabBar)
+            }
 
         }
     }

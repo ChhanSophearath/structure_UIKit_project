@@ -22,6 +22,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupConstraints()
+        self.leftBarButtonItem()
     }
     
     // MARK: - Setup Methods
@@ -53,11 +54,10 @@ class BaseViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    
     deinit{
-        print("🔴 BaseViewController is working deinit")
-        
+        print("🔴 BaseViewController is working deinit title: \(title ?? "No name.")")
     }
+    
 }
 
 struct AvailableServiceModel{

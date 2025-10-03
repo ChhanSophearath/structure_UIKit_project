@@ -10,43 +10,43 @@ import CoreLocation
 
 class AppManager{
     
-    static let shared = AppManager()
+//    static let shared = AppManager()
     
-    func setCustomNavigationBarAppearance(
-        titleColor: UIColor,
-        titleColorScrolling: UIColor,
-        barAppearanceColor: UIColor,
-        barAppearanceScrollingColor: UIColor,
-        shadowColorLine: UIColor
+   static func setCustomNavigationBarAppearance(
+        titleColor: UIColor = .red,
+        titleColorScrolling: UIColor = .black,
+        barAppearanceColor: UIColor = .clear,
+        barAppearanceScrollingColor: UIColor = .white,
+        shadowColorLine: UIColor = .clear
     ){
-        let setupFont = UIFont.appFont(style: .bold, size: 16)
+        let setupFont = UIFont.appFont(style: .bold, size: 17)
         let largeFont = UIFont.appFont(style: .bold, size: 24)
         
-        // For non-scrolled state (standard appearance)
+
         let standardAppearance = UINavigationBarAppearance()
         standardAppearance.configureWithOpaqueBackground()
-        standardAppearance.backgroundColor = barAppearanceColor
+        standardAppearance.backgroundColor = barAppearanceScrollingColor
         standardAppearance.shadowColor = shadowColorLine
         standardAppearance.titleTextAttributes = [
-            .foregroundColor: titleColor,
+            .foregroundColor: titleColorScrolling,
             .font: setupFont
         ]
         standardAppearance.largeTitleTextAttributes = [
-            .foregroundColor: titleColor,
+            .foregroundColor: titleColorScrolling,
             .font: largeFont
         ]
         
-        // For scrolled state (scrollEdgeAppearance)
+
         let scrollEdgeAppearance = UINavigationBarAppearance()
         scrollEdgeAppearance.configureWithOpaqueBackground()
-        scrollEdgeAppearance.backgroundColor = barAppearanceScrollingColor
+        scrollEdgeAppearance.backgroundColor = barAppearanceColor
         scrollEdgeAppearance.shadowColor = shadowColorLine
         scrollEdgeAppearance.titleTextAttributes = [
-            .foregroundColor: titleColorScrolling,
+            .foregroundColor: titleColor,
             .font: setupFont
         ]
         scrollEdgeAppearance.largeTitleTextAttributes = [
-            .foregroundColor: titleColorScrolling,
+            .foregroundColor: titleColor,
             .font: largeFont
         ]
         
@@ -54,7 +54,7 @@ class AppManager{
         let navBar = UINavigationBar.appearance()
         navBar.standardAppearance = standardAppearance
         navBar.scrollEdgeAppearance = scrollEdgeAppearance
-        
+        print("✅ Getup UINavigationBarAppearance.")
     }
     
     func getTopMostViewController(completionHandler: @escaping (UIViewController?) -> Void) {
@@ -115,7 +115,6 @@ class AppManager{
             break
         }
     }
-    
     
     func distanceKm(latitude: Double?, long: Double?, userLocation: CLLocation?) -> String{
         

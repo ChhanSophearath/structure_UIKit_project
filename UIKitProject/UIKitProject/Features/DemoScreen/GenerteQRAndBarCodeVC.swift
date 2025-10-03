@@ -8,18 +8,15 @@
 import UIKit
 
 class GenerteQRAndBarCodeVC: BaseUIViewConroller {
+ 
     
     lazy var viewQRCode: QRCodeView = {
         let view = QRCodeView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.imgQR.image = "Hello Cambodia".toCodeImage(type: .qrCode)
         return view
     }()
     
     lazy var viewBarCode: QRCodeView = {
         let view = QRCodeView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.imgQR.image = "123456789".toCodeImage(type: .barCode128)
         return view
     }()
 
@@ -28,6 +25,19 @@ class GenerteQRAndBarCodeVC: BaseUIViewConroller {
         title = "Generale QRCode or Bar Code"
         view.backgroundColor = .white
         setupUI()
+        generateCodes()
+    }
+    
+    private func generateCodes() {
+        DispatchQueue.global(qos: .userInitiated).async {
+            let qrImage = "Hello Cambodia".toCodeImage(type: .qrCode)
+            let barImage = "123456789".toCodeImage(type: .barCode128)
+            
+            DispatchQueue.main.async {
+                self.viewQRCode.imgQR.image = qrImage
+                self.viewBarCode.imgQR.image = barImage
+            }
+        }
     }
     
     private func setupUI(){
@@ -109,4 +119,6 @@ class QRCodeView: UIView {
         ])
     }
 }
+
+
 

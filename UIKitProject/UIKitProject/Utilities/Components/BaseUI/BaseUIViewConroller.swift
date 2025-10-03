@@ -7,14 +7,13 @@
 
 import UIKit
 
-var isSwipingBack = true
-
 class BaseUIViewConroller: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        
         self.leftBarButtonItem()
+        self.view.backgroundColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,6 +23,7 @@ class BaseUIViewConroller: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -35,27 +35,7 @@ class BaseUIViewConroller: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidDisappear(animated)
         
     }
-    
-    private func setupInteractivePopGestureRecognizer(){
-
-    }
-    
 }
 
 
-// MARK: Make swiping enble when custom back button
-extension UINavigationController: UIGestureRecognizerDelegate {
 
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        interactivePopGestureRecognizer?.delegate = self
-    }
-    
-    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        return (viewControllers.count > 1 && isSwipingBack)
-    }
-    
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return false
-    }
-}

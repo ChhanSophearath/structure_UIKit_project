@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomDatePickerViewController: UIViewController{
+class CustomDatePickerViewController: BaseUIViewConroller{
     
     let datePicker = CustomDatePickerView()
     
@@ -18,6 +18,7 @@ class CustomDatePickerViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
     }
     
 }
@@ -210,6 +211,7 @@ class CustomDatePickerView: UIView {
             print("Please select an end date.")
             return
         }
+        
         if start > end {
             print("Start date cannot be later than end date.")
             return

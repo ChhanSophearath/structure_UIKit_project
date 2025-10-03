@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA7F8DB42E8E728600243B35 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = FA7F8DB32E8E728600243B35 /* style.css */; };
+		FA8254562E8F69EE00C38187 /*  WKWebView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8254552E8F69EE00C38187 /*  WKWebView + Extension.swift */; };
+		FA8254592E8F7D1100C38187 /* TableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8254582E8F7D1100C38187 /* TableHandler.swift */; };
+		FA82545B2E8F8D0B00C38187 /* CollectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82545A2E8F8D0B00C38187 /* CollectionHandler.swift */; };
+		FA8254602E8F8E0500C38187 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82545F2E8F8E0500C38187 /* TableViewCell.swift */; };
+		FA8254622E8F8EA900C38187 /* CollectViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8254612E8F8EA900C38187 /* CollectViewCell.swift */; };
+		FA8C691D2E8FA043000309C3 /* DisplayTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C691C2E8FA043000309C3 /* DisplayTableVC.swift */; };
+		FA8C691F2E8FA05D000309C3 /* DisplayCollectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C691E2E8FA05D000309C3 /* DisplayCollectVC.swift */; };
+		FA8C69212E8FA3B6000309C3 /* PhoneTextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C69202E8FA3B6000309C3 /* PhoneTextFieldVC.swift */; };
+		FA8C69232E8FA999000309C3 /* UINavigationController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8C69222E8FA999000309C3 /* UINavigationController + Extension.swift */; };
+		FA94766C2E8CE9A7008159B9 /* ApiManagerAsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94766B2E8CE9A7008159B9 /* ApiManagerAsyncAwait.swift */; };
 		FAB9D73D2E726BB30024704B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D73B2E726BB30024704B /* Main.storyboard */; };
 		FAB9D7422E726BB50024704B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D7402E726BB50024704B /* LaunchScreen.storyboard */; };
 		FAB9D74D2E726BB60024704B /* UIKitProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D74C2E726BB60024704B /* UIKitProjectTests.swift */; };
@@ -86,11 +97,6 @@
 		FAB9D8212E726C000024704B /* SharedLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7D72E726C000024704B /* SharedLinkVC.swift */; };
 		FAB9D8222E726C000024704B /* MenuDragDropCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7D92E726C000024704B /* MenuDragDropCell.swift */; };
 		FAB9D8232E726C000024704B /* DragDropCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7DA2E726C000024704B /* DragDropCollectionVC.swift */; };
-		FAB9D8242E726C000024704B /* MakeOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7DE2E726C000024704B /* MakeOrderModel.swift */; };
-		FAB9D8252E726C000024704B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7E12E726C000024704B /* ProductCell.swift */; };
-		FAB9D8262E726C000024704B /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7E32E726C000024704B /* MakeOrderViewController.swift */; };
-		FAB9D8272E726C000024704B /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7E42E726C000024704B /* AddProductViewController.swift */; };
-		FAB9D8282E726C000024704B /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9D7E52E726C000024704B /* OrderListViewController.swift */; };
 		FAB9D8402E726C070024704B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D82A2E726C070024704B /* Localizable.strings */; };
 		FAB9D8412E726C070024704B /* createDeepLinkApp.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D82D2E726C070024704B /* createDeepLinkApp.png */; };
 		FAB9D8422E726C070024704B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB9D82E2E726C070024704B /* Assets.xcassets */; };
@@ -205,6 +211,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA7F8DB32E8E728600243B35 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		FA8254552E8F69EE00C38187 /*  WKWebView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " WKWebView + Extension.swift"; sourceTree = "<group>"; };
+		FA8254582E8F7D1100C38187 /* TableHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHandler.swift; sourceTree = "<group>"; };
+		FA82545A2E8F8D0B00C38187 /* CollectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHandler.swift; sourceTree = "<group>"; };
+		FA82545F2E8F8E0500C38187 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		FA8254612E8F8EA900C38187 /* CollectViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectViewCell.swift; sourceTree = "<group>"; };
+		FA8C691C2E8FA043000309C3 /* DisplayTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTableVC.swift; sourceTree = "<group>"; };
+		FA8C691E2E8FA05D000309C3 /* DisplayCollectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCollectVC.swift; sourceTree = "<group>"; };
+		FA8C69202E8FA3B6000309C3 /* PhoneTextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextFieldVC.swift; sourceTree = "<group>"; };
+		FA8C69222E8FA999000309C3 /* UINavigationController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController + Extension.swift"; sourceTree = "<group>"; };
+		FA94766B2E8CE9A7008159B9 /* ApiManagerAsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManagerAsyncAwait.swift; sourceTree = "<group>"; };
 		FAB9D7322E726BB30024704B /* UIKitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB9D73C2E726BB30024704B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAB9D7412E726BB50024704B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -288,11 +305,6 @@
 		FAB9D7D72E726C000024704B /* SharedLinkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedLinkVC.swift; sourceTree = "<group>"; };
 		FAB9D7D92E726C000024704B /* MenuDragDropCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDragDropCell.swift; sourceTree = "<group>"; };
 		FAB9D7DA2E726C000024704B /* DragDropCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragDropCollectionVC.swift; sourceTree = "<group>"; };
-		FAB9D7DE2E726C000024704B /* MakeOrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeOrderModel.swift; sourceTree = "<group>"; };
-		FAB9D7E12E726C000024704B /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
-		FAB9D7E32E726C000024704B /* MakeOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
-		FAB9D7E42E726C000024704B /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
-		FAB9D7E52E726C000024704B /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
 		FAB9D82B2E726C070024704B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FAB9D82D2E726C070024704B /* createDeepLinkApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createDeepLinkApp.png; sourceTree = "<group>"; };
 		FAB9D82E2E726C070024704B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -415,6 +427,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA8254572E8F6A2400C38187 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F8DB32E8E728600243B35 /* style.css */,
+				FA8254552E8F69EE00C38187 /*  WKWebView + Extension.swift */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		FA82545C2E8F8DD800C38187 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA82545F2E8F8E0500C38187 /* TableViewCell.swift */,
+				FA8254612E8F8EA900C38187 /* CollectViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FA8C691B2E8F9FFF000309C3 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C691C2E8FA043000309C3 /* DisplayTableVC.swift */,
+				FA8C691E2E8FA05D000309C3 /* DisplayCollectVC.swift */,
+				FAB9D7AD2E726C000024704B /* DisplayWebController.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		FA8C69242E8FBC3E000309C3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9D7662E726BEE0024704B /* AppDelegate.swift */,
+				FAB9D7672E726BEE0024704B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		FAB9D7292E726BB20024704B = {
 			isa = PBXGroup;
 			children = (
@@ -438,11 +487,9 @@
 		FAB9D7342E726BB30024704B /* UIKitProject */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D7652E726BEE0024704B /* App */,
-				FAB9D76A2E726BF90024704B /* Config */,
+				FAB9D7652E726BEE0024704B /* MainApp */,
 				FAB9D7842E726C000024704B /* Features */,
 				FAB9D8572E726C210024704B /* Utilities */,
-				FAB9D84D2E726C0E0024704B /* Services API */,
 				FAB9D8292E726C070024704B /* Resources */,
 			);
 			path = UIKitProject;
@@ -465,22 +512,22 @@
 			path = UIKitProjectUITests;
 			sourceTree = "<group>";
 		};
-		FAB9D7652E726BEE0024704B /* App */ = {
+		FAB9D7652E726BEE0024704B /* MainApp */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D7662E726BEE0024704B /* AppDelegate.swift */,
-				FAB9D7672E726BEE0024704B /* SceneDelegate.swift */,
+				FA8C69242E8FBC3E000309C3 /* App */,
+				FAB9D76A2E726BF90024704B /* Enviroment */,
 			);
-			path = App;
+			path = MainApp;
 			sourceTree = "<group>";
 		};
-		FAB9D76A2E726BF90024704B /* Config */ = {
+		FAB9D76A2E726BF90024704B /* Enviroment */ = {
 			isa = PBXGroup;
 			children = (
 				FAB9D76B2E726BF90024704B /* ConfigurationStringFile */,
 				FAB9D76F2E726BF90024704B /* Utilities */,
 			);
-			path = Config;
+			path = Enviroment;
 			sourceTree = "<group>";
 		};
 		FAB9D76B2E726BF90024704B /* ConfigurationStringFile */ = {
@@ -518,9 +565,7 @@
 		FAB9D7842E726C000024704B /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D7852E726C000024704B /* APITheSameTime */,
 				FAB9D7892E726C000024704B /* DemoScreen */,
-				FAB9D7DB2E726C000024704B /* TabBar */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -538,9 +583,22 @@
 		FAB9D7892E726C000024704B /* DemoScreen */ = {
 			isa = PBXGroup;
 			children = (
+				FAB9D7852E726C000024704B /* APITheSameTime */,
+				FAB9D7B62E726C000024704B /* BaseUIViewController */,
+				FAB9D7AE2E726C000024704B /* Firebase */,
+				FAB9D7A42E726C000024704B /* ExspandTable */,
+				FAB9D79B2E726C000024704B /* DemoFeature */,
+				FAB9D7A12E726C000024704B /* SplashScreen */,
+				FAB9D78C2E726C000024704B /* Home */,
+				FA8C691B2E8F9FFF000309C3 /* Display */,
+				FAB9D7B82E726C000024704B /* Kanban */,
+				FAB9D7C22E726C000024704B /* New Group */,
+				FAB9D7CC2E726C000024704B /* HomeABA */,
+				FAB9D7D12E726C000024704B /* LoginScreen */,
+				FAB9D7D82E726C000024704B /* DragDropCollection */,
+				FAB9D7C82E726C000024704B /* CenteringCell */,
 				FAB9D78A2E726C000024704B /* PasscodeVC.swift */,
 				FAB9D78B2E726C000024704B /* CrashlyticsVC.swift */,
-				FAB9D78C2E726C000024704B /* Home */,
 				FAB9D7922E726C000024704B /* OTPVC.swift */,
 				FAB9D7932E726C000024704B /* DisplayGifFileVC.swift */,
 				FAB9D7942E726C000024704B /* SignatureViewController.swift */,
@@ -550,35 +608,24 @@
 				FAB9D7982E726C000024704B /* NIDScannerVC.swift */,
 				FAB9D7992E726C000024704B /* TestingButtonVC.swift */,
 				FAB9D79A2E726C000024704B /* GoogleMapsViewController.swift */,
-				FAB9D79B2E726C000024704B /* DemoFeature */,
 				FAB9D79D2E726C000024704B /* SegmentPageViewController.swift */,
 				FAB9D79E2E726C000024704B /* HtmlVC.swift */,
 				FAB9D79F2E726C000024704B /* SuccessfullyVC.swift */,
 				FAB9D7A02E726C000024704B /* KeychainViewController.swift */,
-				FAB9D7A12E726C000024704B /* SplashScreen */,
-				FAB9D7A42E726C000024704B /* ExspandTableView */,
 				FAB9D7AB2E726C000024704B /* SwipeTableViewHeaderVC.swift */,
 				FAB9D7AC2E726C000024704B /* ScannerCV.swift */,
-				FAB9D7AD2E726C000024704B /* DisplayWebController.swift */,
-				FAB9D7AE2E726C000024704B /* Firebase */,
 				FAB9D7B52E726C000024704B /* HandleNavigationBarVC.swift */,
-				FAB9D7B62E726C000024704B /* BaseUIViewController */,
-				FAB9D7B82E726C000024704B /* Kanban */,
 				FAB9D7C02E726C000024704B /* SliderVC.swift */,
 				FAB9D7C12E726C000024704B /* AddVucherVC.swift */,
-				FAB9D7C22E726C000024704B /* New Group */,
 				FAB9D7C42E726C000024704B /* MemoryleaksVC.swift */,
 				FAB9D7C52E726C000024704B /* DragDropTableVC.swift */,
 				FAB9D7C62E726C000024704B /* GenerteQRAndBarCodeVC.swift */,
 				FAB9D7C72E726C000024704B /* LifeCycleViewController.swift */,
-				FAB9D7C82E726C000024704B /* CenteringCell */,
-				FAB9D7CC2E726C000024704B /* HomeABA */,
 				FAB9D7D02E726C000024704B /* UploadImageVC.swift */,
-				FAB9D7D12E726C000024704B /* LoginScreen */,
 				FAB9D7D52E726C000024704B /* LifecycleVC.swift */,
 				FAB9D7D62E726C000024704B /* LocalizableVC.swift */,
 				FAB9D7D72E726C000024704B /* SharedLinkVC.swift */,
-				FAB9D7D82E726C000024704B /* DragDropCollection */,
+				FA8C69202E8FA3B6000309C3 /* PhoneTextFieldVC.swift */,
 			);
 			path = DemoScreen;
 			sourceTree = "<group>";
@@ -626,13 +673,13 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
-		FAB9D7A42E726C000024704B /* ExspandTableView */ = {
+		FAB9D7A42E726C000024704B /* ExspandTable */ = {
 			isa = PBXGroup;
 			children = (
 				FAB9D7A52E726C000024704B /* Cell */,
 				FAB9D7A72E726C000024704B /* View */,
 			);
-			path = ExspandTableView;
+			path = ExspandTable;
 			sourceTree = "<group>";
 		};
 		FAB9D7A52E726C000024704B /* Cell */ = {
@@ -777,58 +824,6 @@
 			path = DragDropCollection;
 			sourceTree = "<group>";
 		};
-		FAB9D7DB2E726C000024704B /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9D7DC2E726C000024704B /* Home */,
-			);
-			path = TabBar;
-			sourceTree = "<group>";
-		};
-		FAB9D7DC2E726C000024704B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9D7DD2E726C000024704B /* Models */,
-				FAB9D7DF2E726C000024704B /* Views */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		FAB9D7DD2E726C000024704B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9D7DE2E726C000024704B /* MakeOrderModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FAB9D7DF2E726C000024704B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9D7E02E726C000024704B /* Cells */,
-				FAB9D7E22E726C000024704B /* ViewControllers */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		FAB9D7E02E726C000024704B /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9D7E12E726C000024704B /* ProductCell.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		FAB9D7E22E726C000024704B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9D7E32E726C000024704B /* MakeOrderViewController.swift */,
-				FAB9D7E42E726C000024704B /* AddProductViewController.swift */,
-				FAB9D7E52E726C000024704B /* OrderListViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		FAB9D8292E726C070024704B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -893,10 +888,11 @@
 		FAB9D84D2E726C0E0024704B /* Services API */ = {
 			isa = PBXGroup;
 			children = (
+				FAB9D8512E726C0E0024704B /* Loading.swift */,
 				FAB9D84E2E726C0E0024704B /* Endpoints.swift */,
 				FAB9D84F2E726C0E0024704B /* ApiManager.swift */,
 				FAB9D8502E726C0E0024704B /* DebuggerRespose.swift */,
-				FAB9D8512E726C0E0024704B /* Loading.swift */,
+				FA94766B2E8CE9A7008159B9 /* ApiManagerAsyncAwait.swift */,
 			);
 			path = "Services API";
 			sourceTree = "<group>";
@@ -904,11 +900,12 @@
 		FAB9D8572E726C210024704B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D8582E726C210024704B /* Extensions */,
 				FAB9D8742E726C220024704B /* Notice */,
-				FAB9D8762E726C220024704B /* Manager */,
-				FAB9D8852E726C220024704B /* Components */,
 				FAB9D8B12E726C220024704B /* Helpers */,
+				FAB9D8762E726C220024704B /* Manager */,
+				FAB9D8582E726C210024704B /* Extensions */,
+				FAB9D8852E726C220024704B /* Components */,
+				FAB9D84D2E726C0E0024704B /* Services API */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -925,22 +922,24 @@
 		FAB9D8592E726C210024704B /* UIKitDataTypes */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D85A2E726C210024704B /* UIImage + Extension.swift */,
-				FAB9D85B2E726C210024704B /* UILabel + Extension.swift */,
-				FAB9D85C2E726C210024704B /* UIImageView + Extension.swift */,
+				FA8254572E8F6A2400C38187 /* WKWebView */,
+				FAB9D8652E726C220024704B /* UIView + Extension */,
 				FAB9D85D2E726C210024704B /* UIFont + Extension.swift */,
-				FAB9D85E2E726C210024704B /* UserDefaults + Extension.swift */,
 				FAB9D85F2E726C210024704B /* UIColor + Extension.swift */,
+				FAB9D85B2E726C210024704B /* UILabel + Extension.swift */,
+				FAB9D85A2E726C210024704B /* UIImage + Extension.swift */,
+				FAB9D85C2E726C210024704B /* UIImageView + Extension.swift */,
+				FAB9D85E2E726C210024704B /* UserDefaults + Extension.swift */,
 				FAB9D8602E726C210024704B /* CALayer + Extension.swift */,
 				FAB9D8612E726C210024704B /* UITableViewCell + Extension.swift */,
 				FAB9D8622E726C210024704B /* UIViewController + Extension.swift */,
 				FAB9D8632E726C210024704B /* NotificationName + Extension.swift */,
 				FAB9D8642E726C210024704B /* UIButton + Extension.swift */,
-				FAB9D8652E726C220024704B /* UIView + Extension */,
 				FAB9D86B2E726C220024704B /* UICollectionViewCell + Extension.swift */,
 				FAB9D86C2E726C220024704B /* UIScrollView + Extension.swift */,
 				FAB9D86D2E726C220024704B /* UITextField + Extension.swift */,
 				FAB9D86E2E726C220024704B /* UIDevice + Extension.swift */,
+				FA8C69222E8FA999000309C3 /* UINavigationController + Extension.swift */,
 			);
 			path = UIKitDataTypes;
 			sourceTree = "<group>";
@@ -993,6 +992,7 @@
 				FAB9D8822E726C220024704B /* FileDownloaderManager.swift */,
 				FAB9D8832E726C220024704B /* DateManager.swift */,
 				FAB9D8842E726C220024704B /* LocationManager.swift */,
+				FAB9D8BA2E726C220024704B /* Table&Collecttion */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -1000,7 +1000,10 @@
 		FAB9D8852E726C220024704B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FAB9D89C2E726C220024704B /* AlertManager */,
+				FAB9D8A42E726C220024704B /* TabBar */,
 				FAB9D8862E726C220024704B /* BaseUI */,
+				FAB9D8972E726C220024704B /* OTP */,
 				FAB9D8902E726C220024704B /* Utility */,
 			);
 			path = Components;
@@ -1009,8 +1012,8 @@
 		FAB9D8862E726C220024704B /* BaseUI */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D8872E726C220024704B /* BaseUIButton.swift */,
 				FAB9D8882E726C220024704B /* BaseUIView.swift */,
+				FAB9D8872E726C220024704B /* BaseUIButton.swift */,
 				FAB9D8892E726C220024704B /* BaseUILabelPadding.swift */,
 				FAB9D88A2E726C220024704B /* BaseUIImagePickerController.swift */,
 				FAB9D88B2E726C220024704B /* BaseInteractionViewController.swift */,
@@ -1025,22 +1028,20 @@
 		FAB9D8902E726C220024704B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D8912E726C220024704B /* CheckmarkView.swift */,
+				FAB9D8AC2E726C220024704B /* DayRangeSelectionDate */,
 				FAB9D8922E726C220024704B /* Cells */,
+				FAB9D8912E726C220024704B /* CheckmarkView.swift */,
 				FAB9D8942E726C220024704B /* MoreView.swift */,
 				FAB9D8952E726C220024704B /* SegmentedView.swift */,
 				FAB9D8962E726C220024704B /* DashedLineView.swift */,
-				FAB9D8972E726C220024704B /* OTP */,
 				FAB9D89B2E726C220024704B /* TwoColorsTopBottomVC.swift */,
-				FAB9D89C2E726C220024704B /* AlertManager */,
 				FAB9D8A02E726C220024704B /* BottomSheetViewController.swift */,
 				FAB9D8A12E726C220024704B /* SSPaddingLabelManager.swift */,
 				FAB9D8A22E726C220024704B /* CustomSearchBar.swift */,
 				FAB9D8A32E726C220024704B /* MainTextField.swift */,
-				FAB9D8A42E726C220024704B /* TabBar */,
 				FAB9D8AB2E726C220024704B /* SingleSelectView.swift */,
-				FAB9D8AC2E726C220024704B /* DayRangeSelectionDate */,
 				FAB9D8AF2E726C220024704B /* BlurredBackgroundView.swift */,
+				FAB9D8B92E726C220024704B /* AppConstants.swift */,
 				FAB9D8B02E726C220024704B /* TriangleView.swift */,
 			);
 			path = Utility;
@@ -1116,8 +1117,6 @@
 				FAB9D8B22E726C220024704B /* Models */,
 				FAB9D8B42E726C220024704B /* RealmSwift */,
 				FAB9D8B62E726C220024704B /* Emun */,
-				FAB9D8B82E726C220024704B /* Utility */,
-				FAB9D8BA2E726C220024704B /* ContentSize */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1146,21 +1145,16 @@
 			path = Emun;
 			sourceTree = "<group>";
 		};
-		FAB9D8B82E726C220024704B /* Utility */ = {
+		FAB9D8BA2E726C220024704B /* Table&Collecttion */ = {
 			isa = PBXGroup;
 			children = (
-				FAB9D8B92E726C220024704B /* AppConstants.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		FAB9D8BA2E726C220024704B /* ContentSize */ = {
-			isa = PBXGroup;
-			children = (
+				FA82545C2E8F8DD800C38187 /* Cell */,
+				FA8254582E8F7D1100C38187 /* TableHandler.swift */,
+				FA82545A2E8F8D0B00C38187 /* CollectionHandler.swift */,
 				FAB9D8BB2E726C220024704B /* ContentSizedCollectionView.swift */,
 				FAB9D8BC2E726C220024704B /* ContentSizedTableView.swift */,
 			);
-			path = ContentSize;
+			path = "Table&Collecttion";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1269,6 +1263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB9D7422E726BB50024704B /* LaunchScreen.storyboard in Resources */,
+				FA7F8DB42E8E728600243B35 /* style.css in Resources */,
 				FAB9D84A2E726C070024704B /* NotoSansKhmer-Medium.ttf in Resources */,
 				FAB9D8412E726C070024704B /* createDeepLinkApp.png in Resources */,
 				FAB9D7792E726BF90024704B /* uat.xcconfig in Resources */,
@@ -1324,13 +1319,14 @@
 				FAB9D8002E726C000024704B /* ExpandedMultipleSectionVC.swift in Sources */,
 				FAB9D8022E726C000024704B /* SwipeTableViewHeaderVC.swift in Sources */,
 				FAB9D80B2E726C000024704B /* BoardCollectionVC.swift in Sources */,
+				FA8C69212E8FA3B6000309C3 /* PhoneTextFieldVC.swift in Sources */,
 				FAB9D8D92E726C220024704B /* CollectionViewManagerHelper.swift in Sources */,
 				FAB9D7812E726BF90024704B /* AppConfiguration.swift in Sources */,
 				FAB9D8EA2E726C220024704B /* BaseUIButtonIcon.swift in Sources */,
 				FAB9D8192E726C000024704B /* HomeABAVC.swift in Sources */,
 				FAB9D8012E726C000024704B /* ExspandTableVC.swift in Sources */,
 				FAB9D7EC2E726C000024704B /* HomeVC.swift in Sources */,
-				FAB9D8252E726C000024704B /* ProductCell.swift in Sources */,
+				FA82545B2E8F8D0B00C38187 /* CollectionHandler.swift in Sources */,
 				FAB9D7E92E726C000024704B /* PasscodeVC.swift in Sources */,
 				FAB9D80D2E726C000024704B /* BoardCollectionViewCell.swift in Sources */,
 				FAB9D8122E726C000024704B /* DragDropTableVC.swift in Sources */,
@@ -1347,9 +1343,9 @@
 				FAB9D81A2E726C000024704B /* TableCell.swift in Sources */,
 				FAB9D8C52E726C220024704B /* UIViewController + Extension.swift in Sources */,
 				FAB9D8172E726C000024704B /* UPCarouselFlowLayout.swift in Sources */,
-				FAB9D8272E726C000024704B /* AddProductViewController.swift in Sources */,
 				FAB9D8CC2E726C220024704B /* CreateUIView.swift in Sources */,
 				FAB9D8F52E726C220024704B /* TwoColorsTopBottomVC.swift in Sources */,
+				FA8254562E8F69EE00C38187 /*  WKWebView + Extension.swift in Sources */,
 				FAB9D9012E726C220024704B /* SingleSelectView.swift in Sources */,
 				FAB9D8F72E726C220024704B /* AlertErrorVC.swift in Sources */,
 				FAB9D8DD2E726C220024704B /* AppManager.swift in Sources */,
@@ -1365,6 +1361,7 @@
 				FAB9D7EB2E726C000024704B /* HomeVM.swift in Sources */,
 				FAB9D8532E726C0E0024704B /* ApiManager.swift in Sources */,
 				FAB9D8F42E726C220024704B /* OneTimeCodeTextField.swift in Sources */,
+				FA8254592E8F7D1100C38187 /* TableHandler.swift in Sources */,
 				FAB9D7F82E726C000024704B /* SegmentPageViewController.swift in Sources */,
 				FAB9D8082E726C000024704B /* HandleNavigationBarVC.swift in Sources */,
 				FAB9D7F72E726C000024704B /* DemoFeatureVC.swift in Sources */,
@@ -1386,6 +1383,7 @@
 				FAB9D81E2E726C000024704B /* LoginVC.swift in Sources */,
 				FAB9D7EE2E726C000024704B /* OTPVC.swift in Sources */,
 				FAB9D8142E726C000024704B /* LifeCycleViewController.swift in Sources */,
+				FA94766C2E8CE9A7008159B9 /* ApiManagerAsyncAwait.swift in Sources */,
 				FAB9D8222E726C000024704B /* MenuDragDropCell.swift in Sources */,
 				FAB9D8162E726C000024704B /* CardCell.swift in Sources */,
 				FAB9D8E22E726C220024704B /* DateManager.swift in Sources */,
@@ -1393,6 +1391,7 @@
 				FAB9D8C92E726C220024704B /* AnimateUIView.swift in Sources */,
 				FAB9D8182E726C000024704B /* CollectionCell.swift in Sources */,
 				FAB9D8EF2E726C220024704B /* MoreView.swift in Sources */,
+				FA8C69232E8FA999000309C3 /* UINavigationController + Extension.swift in Sources */,
 				FAB9D8052E726C000024704B /* FirebaseManager.swift in Sources */,
 				FAB9D8C62E726C220024704B /* NotificationName + Extension.swift in Sources */,
 				FAB9D8CE2E726C220024704B /* UIScrollView + Extension.swift in Sources */,
@@ -1405,14 +1404,15 @@
 				FAB9D8E52E726C220024704B /* BaseUIView.swift in Sources */,
 				FAB9D8E72E726C220024704B /* BaseUIImagePickerController.swift in Sources */,
 				FAB9D8ED2E726C220024704B /* CheckmarkView.swift in Sources */,
+				FA8C691F2E8FA05D000309C3 /* DisplayCollectVC.swift in Sources */,
 				FAB9D8C72E726C220024704B /* UIButton + Extension.swift in Sources */,
 				FAB9D7F62E726C000024704B /* GoogleMapsViewController.swift in Sources */,
 				FAB9D8C82E726C220024704B /* ConditionUIView.swift in Sources */,
 				FAB9D8E02E726C220024704B /* TableViewManagerHelper.swift in Sources */,
 				FAB9D7FC2E726C000024704B /* SelfSizingViewController.swift in Sources */,
 				FAB9D7FD2E726C000024704B /* SplashScreenVC.swift in Sources */,
+				FA8254622E8F8EA900C38187 /* CollectViewCell.swift in Sources */,
 				FAB9D8BD2E726C220024704B /* UIImage + Extension.swift in Sources */,
-				FAB9D8242E726C000024704B /* MakeOrderModel.swift in Sources */,
 				FAB9D8C12E726C220024704B /* UserDefaults + Extension.swift in Sources */,
 				FAB9D8D52E726C220024704B /* Note + Read.swift in Sources */,
 				FAB9D7FB2E726C000024704B /* KeychainViewController.swift in Sources */,
@@ -1420,10 +1420,10 @@
 				FAB9D7682E726BEE0024704B /* AppDelegate.swift in Sources */,
 				FAB9D8F32E726C220024704B /* OneTimeCodeTextFieldDelegate.swift in Sources */,
 				FAB9D7E72E726C000024704B /* APITheSameTimeViewModel.swift in Sources */,
+				FA8C691D2E8FA043000309C3 /* DisplayTableVC.swift in Sources */,
 				FAB9D8202E726C000024704B /* LocalizableVC.swift in Sources */,
 				FAB9D8D32E726C220024704B /* CGFloat + Extension.swift in Sources */,
 				FAB9D8FE2E726C220024704B /* CustomTabBarVC.swift in Sources */,
-				FAB9D8262E726C000024704B /* MakeOrderViewController.swift in Sources */,
 				FAB9D8062E726C000024704B /* CreateDBFeribaseViewController.swift in Sources */,
 				FAB9D8032E726C000024704B /* ScannerCV.swift in Sources */,
 				FAB9D80F2E726C000024704B /* AddVucherVC.swift in Sources */,
@@ -1442,7 +1442,6 @@
 				FAB9D8042E726C000024704B /* DisplayWebController.swift in Sources */,
 				FAB9D8FC2E726C220024704B /* MainTextField.swift in Sources */,
 				FAB9D77F2E726BF90024704B /* FontName.swift in Sources */,
-				FAB9D8282E726C000024704B /* OrderListViewController.swift in Sources */,
 				FAB9D8112E726C000024704B /* MemoryleaksVC.swift in Sources */,
 				FAB9D8EB2E726C220024704B /* BaseUITextFieldPhone.swift in Sources */,
 				FAB9D8542E726C0E0024704B /* DebuggerRespose.swift in Sources */,
@@ -1453,6 +1452,7 @@
 				FAB9D7692E726BEE0024704B /* SceneDelegate.swift in Sources */,
 				FAB9D8EE2E726C220024704B /* NameDetailCell.swift in Sources */,
 				FAB9D8C22E726C220024704B /* UIColor + Extension.swift in Sources */,
+				FA8254602E8F8E0500C38187 /* TableViewCell.swift in Sources */,
 				FAB9D8CB2E726C220024704B /* ActionUIView.swift in Sources */,
 				FAB9D8E92E726C220024704B /* BaseUIPageViewController.swift in Sources */,
 				FAB9D7F92E726C000024704B /* HtmlVC.swift in Sources */,

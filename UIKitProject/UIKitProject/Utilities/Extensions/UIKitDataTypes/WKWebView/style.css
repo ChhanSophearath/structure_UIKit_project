@@ -1,0 +1,59 @@
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: normal;
+    src: url('Roboto-Regular.ttf')
+}
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: bold;
+    src: url('Roboto-Bold.ttf')
+}
+
+@font-face {
+    font-family: 'NotoSansKhmer';
+    font-weight: normal;
+    src: url('NotoSansKhmer-Regular.ttf')
+}
+
+body {
+  font-family: 'Roboto', 'NotoSansKhmer';
+  font-weight: normal;
+  src: url('NotoSansKhmer-Regular.ttf')
+  font-size:16px;
+  color: black;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+h1{
+  font-size:20px;
+}
+
+h2{
+  font-size:18px;
+}
+
+/*
+ 
+MARK: How to use
+
+let htmlString = """
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Hello World</h1>
+<p>សួស្ដី​ពិភពលោក</p>
+</body>
+</html>
+"""
+webView.loadHTMLString(htmlString, baseURL: Bundle.main.bundleURL)
+ 
+ */

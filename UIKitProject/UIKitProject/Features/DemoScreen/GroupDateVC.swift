@@ -76,7 +76,7 @@ class GroupDateVC: BaseUIViewConroller {
     
     private func setupUI() {
         view.addSubview(tableView)
-        tableView.frame  = igorneSafeAeaTop
+        tableView.frame  = view.bounds
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "EventCell")
@@ -98,7 +98,6 @@ class GroupDateVC: BaseUIViewConroller {
         }
         
         sectionDate =  groupedEvents.keys.sorted(by: { $0 > $1 })// big to small
-        //groupedEvents.keys.sorted() // small to big
         
         tableView.reloadData()
     }

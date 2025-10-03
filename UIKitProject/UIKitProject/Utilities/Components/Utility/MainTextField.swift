@@ -206,21 +206,21 @@ extension FloatingLabelTextField{
         case .iconDdate:
             
 //            iconRightImg.image = .icNextWhite
-            isPadding(left: 12, right: 40)
+            padding(left: 12, right: 40)
             
         case .iconCircle:
             
 //            iconRightImg.image = .icNextWhite
-            isPadding(left: 12, right: 40)
+            padding(left: 12, right: 40)
             
         case .iconDropDown:
             
-            isPadding(left: 12, right: 40)
+            padding(left: 12, right: 40)
 //            iconRightImg.image = .icNextWhite
             
         case .iconEmpty:
             
-            isPadding(left: 12, right: 12)
+            padding(left: 12, right: 12)
             iconRightImg.isHidden = true
             
         }
@@ -305,7 +305,7 @@ extension FloatingLabelTextField{
         addSubview(fullView)
         
         //==========//====== Hendle self
-        isPadding(left: 12, right: 12)
+        padding(left: 12, right: 12)
 
         heightAnchor.constraint(equalToConstant: 70).isActive = true
         //==========//======

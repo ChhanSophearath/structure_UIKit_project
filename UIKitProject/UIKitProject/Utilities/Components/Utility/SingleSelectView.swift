@@ -85,7 +85,6 @@ class SingleSelectView: UIView {
     }
 }
 
-
 extension SingleSelectView: UICollectionViewDataSource,UICollectionViewDelegate , UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -112,7 +111,6 @@ extension SingleSelectView: UICollectionViewDataSource,UICollectionViewDelegate 
         didSelectCell?(indexPath.item)
     }
 }
-
 
 class SingleSelectCell: UICollectionViewCell {
     
