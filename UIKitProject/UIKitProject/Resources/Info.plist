@@ -13,6 +13,10 @@
 			</array>
 		</dict>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>abamobilebank</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Bold.ttf</string>
@@ -41,12 +45,10 @@
 			</array>
 		</dict>
 	</dict>
-    
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>abamobilebank</string>
-    </array>
-    
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>api_key</key>
 	<string>$(api_key)</string>
 	<key>base_url</key>

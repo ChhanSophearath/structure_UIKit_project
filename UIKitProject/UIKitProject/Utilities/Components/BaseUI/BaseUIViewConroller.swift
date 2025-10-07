@@ -11,7 +11,6 @@ class BaseUIViewConroller: UIViewController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.leftBarButtonItem()
         self.view.backgroundColor = .white
     }
@@ -35,6 +34,11 @@ class BaseUIViewConroller: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidDisappear(animated)
         
     }
+    
+    deinit {
+        print("Deinit Contoller title: \(title ?? "None title")")
+    }
+    
 }
 
 

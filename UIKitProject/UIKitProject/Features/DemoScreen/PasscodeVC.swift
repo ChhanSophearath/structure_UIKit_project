@@ -202,7 +202,7 @@ extension PasscodeVC{
     // MARK: Setup Circle View Passcode
     private func setupCircleView(){
         
-        for i in 0...digit-1 {
+        for _ in 0...digit-1 {
             let circle = UIView()
             circle.layer.cornerRadius = 10
             circle.backgroundColor = digitColor

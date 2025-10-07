@@ -38,7 +38,7 @@ final class NotificationManager {
     private init() {}
     
     func rootNotificationViewController(userInfo: [AnyHashable : Any]) {
-        let typeString = userInfo["type"] as? String ?? ""
+//        let typeString = userInfo["type"] as? String ?? ""
 //        let notificationType = NotificationTypeEnum(rawValue: typeString)
 //        
 //        

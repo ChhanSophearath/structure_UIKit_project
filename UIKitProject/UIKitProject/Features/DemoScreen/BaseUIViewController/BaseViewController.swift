@@ -67,7 +67,7 @@ struct AvailableServiceModel{
 }
 
 // MARK: - Example Usage
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
     
     var availableService: [AvailableServiceModel] = []
     
@@ -91,15 +91,13 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.isBackBarItemButton = true
+        setupConstraints()
     }
     
-    override func setupUI() {
-        super.setupUI()
-        topView.backgroundColor = .mainYellow
-    }
     
-    override func setupConstraints() {
+     func setupConstraints() {
+         
+         topView.backgroundColor = .mainYellow
         
         let stack = UIStackView(arrangedSubviews: [topView, tableView] )
         stack.axis = .vertical
@@ -175,10 +173,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell0 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let cell1 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        let cell0 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        let cell1 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let cell2 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let cell3 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        let cell3 = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
 //        let allCell = [cell0,cell1,cell2,cell3]
 //        

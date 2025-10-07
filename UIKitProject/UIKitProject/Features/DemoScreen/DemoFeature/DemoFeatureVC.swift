@@ -43,7 +43,7 @@ class DemoFeatureVC: BaseUIViewConroller {
         ListModel(id: 16, name: "SectionedTableViewController", createViewController: { DragDropTableVC() }),
         ListModel(id: 15, name: "SliderController", createViewController: { SliderVC() }),
         ListModel(id: 14, name: "LocalizableVC", createViewController: { LocalizableVC() }),
-        ListModel(id: 13, name: "PagViewControllerWithButtonVC", createViewController: { SegmentPageViewController() }),
+//        ListModel(id: 13, name: "PagViewControllerWithButtonVC", createViewController: { SegmentPageViewController() }),
         ListModel(id: 12, name: "LocalNotificationVC", createViewController: { LocalNotificationVC() }),
         ListModel(id: 11, name: "HandleNavigationBarVC", createViewController: { HandleNavigationBarVC() }),
         ListModel(id: 10, name: "DragDropCollectionVC", createViewController: { DragDropCollectionVC() }),

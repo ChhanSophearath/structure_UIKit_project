@@ -20,11 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         printFontsName()
         networkMonitoring()
-        AppManager.setCustomNavigationBarAppearance()
         rootViewController(scene: scene)
+        AppManager.setCustomNavigationBarAppearance()
     }
-
-    
 }
 
 
@@ -128,4 +126,3 @@ let igorneSafeAeaTop: CGRect = CGRect(x: 0,
                                       y: Int(barAppearanHeight),
                                       width: Int(screen.width),
                                       height: Int(screen.height-barAppearanHeight))
-

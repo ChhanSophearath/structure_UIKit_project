@@ -283,7 +283,7 @@ extension HomeABAVC:  UITableViewDataSource,
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       let data =  dataListTable[indexPath.section][indexPath.row]
+//       let data =  dataListTable[indexPath.section][indexPath.row]
         
         didSelectionCellTableViewRow(id: 1)
         print("UITableView didSelectRowAt")
